@@ -43,6 +43,9 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       { from: './node_modules/graphql-voyager/dist/voyager.worker.js' }
-    ])
+    ]),
+    new webpack.DefinePlugin({
+      'process.env.GRAPHQL_SCHEMA_URL': JSON.stringify(process.env.GRAPHQL_SCHEMA_URL)
+    })
   ]
 }
