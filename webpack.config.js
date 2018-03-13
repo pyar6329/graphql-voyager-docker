@@ -13,7 +13,8 @@ module.exports = {
     watchContentBase: true,
     host: '0.0.0.0',
     port: 9090,
-    stats: 'errors-only'
+    stats: 'errors-only',
+    disableHostCheck: true
   },
   resolve: {
     extensions: ['.jsx', '.js', '.json']
